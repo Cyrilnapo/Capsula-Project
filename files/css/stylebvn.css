@@ -1,0 +1,207 @@
+html, body {
+  width: 99%;
+  height:97%;
+}
+
+body {
+  background: linear-gradient(-45deg, #ffffff, #9e9e9e, #ffffff);
+  background-size: 400% 400%;
+  animation: gradient 12s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+  
+}
+  
+h1 {
+  color: rgb(0, 0, 0);
+  font-family: 'Nunito', sans-serif;
+  font-size:80px;
+}
+hr{
+  position: relative;
+  border-top: 5px solid rgb(0, 0, 0);  
+  border-radius:10px;
+  width: 85%;
+  top:-10px;
+}
+
+
+* { box-sizing: border-box }
+.wrap {
+  width: 0px;
+  margin: 1px;
+  position: absolute;
+  left:100px;
+}
+.menu-drop-btn {
+  position: absolute;
+  width: 60px;
+}
+input {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+  left:1590px;
+  top:28px;
+}
+svg {
+  fill: white;
+  background: #333;
+  border-radius: 100px;
+  z-index: 1;
+  position: relative;
+  left:2650%;
+  top:28px;
+}
+.drop-menu {
+  background: #fff;
+  width: 186.5px;
+  transform: translateY(-4px);
+  overflow:visible;
+  z-index: 4;
+  display: none;
+  box-shadow: 0 7px 20px -7px rgba(0,0,0,0.4);
+  border-radius: 9px; 
+  position: absolute;
+  top:94px;
+  left:1480px;
+  
+}
+.drop-menu a {
+  text-decoration: none;
+  padding: 14px 16px;
+  display:inline-block;
+  width: 100%;
+  color: #555;
+  font-weight: 600;
+  border-bottom: 1px solid #eee;
+  transition: .2s all ease;
+}
+.drop-menu a:hover {
+  color: #222;
+  padding: 14px 16px 14px 21px;
+}
+.drop-menu a:last-child {
+  border-bottom: none;
+  color: #e02144;
+}
+input:checked ~ svg {
+  background: white;
+  fill: #aaa;
+}
+input:checked ~ .drop-menu {
+  display: block;
+  animation-name: menuAnimation;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-duration: .3s;
+}
+@keyframes menuAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-6px);
+  }
+}
+
+.creabtn{
+  position: absolute;
+  font-size:65px;
+  color: #333;
+  top:75px;
+  left:7.5%;
+  text-decoration: none;
+  transition: all 0.4s;
+}
+
+.creabtn:hover {
+  transform:scale(1.3);
+}
+
+
+h2{
+  font-family: 'Nunito', sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  color:#333;
+}
+.date{
+  position:relative;
+  font-family: 'Nunito', sans-serif;
+  font-size: 38px;
+  font-weight: 800;
+  color:#333;
+  float:right;
+  top: -70px;
+}
+.un{
+  position:relative;
+  font-family: 'Nunito', sans-serif;
+  font-size: 38px;
+  font-weight: 800;
+  color:#333;
+  left:515px;
+  top:-46px;
+}
+.deux{
+  position:relative;
+  font-family: 'Nunito', sans-serif;
+  font-size: 38px;
+  font-weight: 800;
+  color:#333;
+  left:642px;
+  top:-34px;
+}
+.capdiv{
+  padding: 0px 13px;
+  line-height:1px;
+  transition: all 0.3s;
+  position:relative;
+  margin:auto;
+  background-color: rgba(255, 255, 255, 0.466);
+  text-align:left;
+  width: 50%; 
+  height:90px;
+  border: 5px solid rgba(165, 165, 165, 0.733) ; 
+  border-radius: 12px;
+}
+.capdiv:hover{
+  cursor:pointer;
+  outline: none !important;
+  border-color: #719ECE;
+  box-shadow: 0 0 10px #719ECE;
+}
+.caps{
+  text-align: center;
+  width: 50%;
+  height: 90px;
+  border-radius: 12px;
+}
+h3{
+  font-family: 'Nunito', sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  color:rgba(51, 51, 51, 0.363);
+  text-align: center;
+}
+.lien{
+  color: rgba(93, 126, 235, 0.541);
+}

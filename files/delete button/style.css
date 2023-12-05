@@ -1,0 +1,6 @@
+  .delete{
+    z-index: 1;
+    position:fixed;
+    top:93%;
+    left: 25px;
+  }
